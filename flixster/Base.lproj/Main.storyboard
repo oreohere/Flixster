@@ -168,26 +168,32 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="xdh-TP-Qd8">
-                                    <size key="itemSize" width="192" height="218"/>
+                                    <size key="itemSize" width="200" height="219"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MovieGridCell" id="IAp-VZ-8WO" customClass="MovieGridCell" customModule="flixster" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="192" height="218"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="219"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="LoL-Aa-vTd">
-                                            <rect key="frame" x="0.0" y="0.0" width="192" height="218"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="219"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GP8-hg-cu8">
-                                                    <rect key="frame" x="0.0" y="-22" width="209" height="240"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GP8-hg-cu8">
+                                                    <rect key="frame" x="16" y="0.0" width="151" height="203"/>
                                                 </imageView>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="GP8-hg-cu8" secondAttribute="trailing" constant="25" id="kcK-Xz-gBu"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="GP8-hg-cu8" secondAttribute="bottom" constant="8" id="lBv-Pu-rUu"/>
+                                                <constraint firstItem="GP8-hg-cu8" firstAttribute="leading" secondItem="LoL-Aa-vTd" secondAttribute="leading" id="noj-3q-7Bd"/>
+                                                <constraint firstItem="GP8-hg-cu8" firstAttribute="top" secondItem="LoL-Aa-vTd" secondAttribute="top" id="qsz-4h-Idl"/>
+                                                <constraint firstItem="GP8-hg-cu8" firstAttribute="leading" secondItem="LoL-Aa-vTd" secondAttribute="leadingMargin" constant="8" id="sqn-4r-iFi"/>
+                                            </constraints>
                                         </collectionViewCellContentView>
-                                        <size key="customSize" width="192" height="218"/>
+                                        <size key="customSize" width="200" height="219"/>
                                         <connections>
                                             <outlet property="posterView" destination="GP8-hg-cu8" id="INJ-8O-jBc"/>
                                         </connections>
