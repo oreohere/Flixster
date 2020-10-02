@@ -8,6 +8,22 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Movie Details View Controller-->
+        <scene sceneID="IYF-VU-pJ3">
+            <objects>
+                <viewController id="Y0D-Ze-di4" customClass="MovieDetailsViewController" customModule="flixster" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="X4Q-Tb-xbd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="4wG-ge-Pdo"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZJ0-ed-CWf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sep-XE-pMx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1835" y="98"/>
+        </scene>
         <!--Movies-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -41,7 +57,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SiD-CF-UgF">
-                                                    <rect key="frame" x="152" y="19" width="221" height="21"/>
+                                                    <rect key="frame" x="152" y="19" width="221" height="33"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                                     <nil key="textColor"/>
@@ -53,6 +69,7 @@
                                             <outlet property="posterView" destination="czc-15-opb" id="tAR-75-SMU"/>
                                             <outlet property="synopsisLabel" destination="oFh-SW-unZ" id="uYJ-ec-hCw"/>
                                             <outlet property="titleLabel" destination="SiD-CF-UgF" id="zjP-rm-L84"/>
+                                            <segue destination="Y0D-Ze-di4" kind="show" id="phu-OR-a5Z"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
