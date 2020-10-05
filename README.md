@@ -19,7 +19,8 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 <img src="https://github.com/oreohere/Flixster/blob/main/flixster_vid_with_grid.gif" width=250><br>
 
 ### Notes
-My posters in the grid were appearing as narrow lines. Seeked help on slack to solve the issue. 
+- My posters in the grid were appearing as narrow lines. Seeked help on slack to solve the issue.
+- Had to spend sometime exploring the movie database api. Wasn't getting data for similar movies initially. Tried recommended ones. But that brought in new problems. had to take a step back and retry the similar movie request.
 
 ---
 
